@@ -410,9 +410,9 @@ while True:
             coin_array.vely=0
             coin_array.velx=0         
             if(foul==1):
+                foul=0
                 striker=Coins(15,(255,240,120))
                 coin_array.add(striker)
-                foul=0
             if player==0:
                 player=1
             else:
