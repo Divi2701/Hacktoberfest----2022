@@ -8,9 +8,9 @@ screen.fill(background)
 pygame.display.set_caption("Carrom")
 width=535
 height=535
-friction=0.2
+friction=0.20
 border=65
-mod = lambda v: sqrt(v[0] * v[0] + v[1] * v[1])
+mod = lambda v: sqrt((v[0] * v[0]) + (v[1] * v[1]))
 black=(0,0,0)
 player1_color=(40,40,40)
 player2_color=(180,180,180)
