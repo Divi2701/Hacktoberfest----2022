@@ -191,9 +191,9 @@ public:
 			for (int j = 0; j < N; j++) {
 				cout << to_string(mat[i][j]) + " ";
 			}
-			cout << endl;
+			cout << "\n";
 		}
-		cout << endl;
+		cout << "\n";
 	}
 };
 
