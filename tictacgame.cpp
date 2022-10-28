@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>  
+#include<iostream>
+
 using namespace std;  
 #define COMPUTER 1  
 #define HUMAN 2  
