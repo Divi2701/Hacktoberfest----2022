@@ -81,7 +81,7 @@ def display_board(board, avail):
 def player_choice(board, name, choice):
     position = 0
     #Initialising position as 0^; so it passes through the while loop; 
-    while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
+    while not space_check(board, position) or position not in [1,2,3,4,5,6,7,8,9]:
         position = int(input(f'\n{name} ({choice}), Choose your next position: (1-9) \t'))
         
         if position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position) or position == "": 
