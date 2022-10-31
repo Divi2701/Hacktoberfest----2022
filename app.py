@@ -154,10 +154,10 @@ def  task():
         day = request.form.get("day")
         month = request.form.get("month")
         task = request.form.get("task")
-        date = request.form.get("date")
-        priority = request.form.get("priority")
-        db.execute("INSERT INTO task (subject,day,month,task,date,priority,type,user_id) VALUES(?, ?, ?,?,?,? ,?,?)", 
-        subject,day,month,task,date,priority,"add",user_id)
+#         date = request.form.get("date")
+#         priority = request.form.get("priority")
+#         db.execute("INSERT INTO task (subject,day,month,task,date,priority,type,user_id) VALUES(?, ?, ?,?,?,? ,?,?)", 
+#         subject,day,month,task,date,priority,"add",user_id)
         return render_template("home.html")
 
     else:
