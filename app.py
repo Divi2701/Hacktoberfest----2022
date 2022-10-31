@@ -33,14 +33,14 @@ db = SQL("sqlite:///planner.db")
 def index():
     return render_template("index.html")
 
-# @app.route("/home")
-# @login_required
-# def home():
-#     user_id=session["user_id"]
-#     print(user_id)
-#     task = db.execute("SELECT * FROM task WHERE user_id = ?" , user_id )
-#     print(task)
-#     return render_template("home.html", task=task)
+@app.route("/home")
+@login_required
+def home():
+    user_id=session["user_id"]
+    print(user_id)
+    task = db.execute("SELECT * FROM task WHERE user_id = ?" , user_id )
+    print(task)
+    return render_template("home.html", task=task)
     
 
 @app.route("/contact", methods=["GET", "POST"])
